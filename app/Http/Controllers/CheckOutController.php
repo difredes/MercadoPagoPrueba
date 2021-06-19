@@ -44,7 +44,7 @@ class CheckOutController extends Controller
           $title=addslashes($request->title);
           $item->title = $title;
           $url=addslashes($request->img);
-          $item->picture_url="https://difredes-mp-ecommerce-php.herokuapp.com/assets/".$url;
+          $item->picture_url="https://difredes-mp-commerce-php.herokuapp.com/assets/".$url;
           $item->description="Dispositivo móvil de Tienda e-commerce";
           $item->quantity = 1;
           //$item->currency_id = "UYU";
