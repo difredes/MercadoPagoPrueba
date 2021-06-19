@@ -67,7 +67,7 @@ $preference->back_urls = array(
 $preference->auto_return = "approved";
 
 //referencia externa
-$preference -> external_reference = "difredespelletti@gmail.com";
+$preference -> external_reference = "jpr230697@gmail.com";
 
 //REFERIDO AL ITEM-----------------------------------------------------
 $item = new MercadoPago\Item();
