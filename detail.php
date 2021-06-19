@@ -54,11 +54,11 @@ $preference->payment_methods = array(
   "installments" => 6  //maximo de 6 cuotas
 );
 
-$preference->notification_url ="https://toasternerd-mp-commerce-php.herokuapp.com/notificaciones.php";
+$preference->notification_url ="https://difredes-mp-commerce-php.herokuapp.com/notificaciones.php";
 
 //REFERIDO A LOS BACK_URL-------------------------------------------
 //invento 3 paginas
-$redirige_url = "https://toasternerd-mp-commerce-php.herokuapp.com/";
+$redirige_url = "https://difredes-mp-commerce-php.herokuapp.com/";
 $preference->back_urls = array(
   "success" => $redirige_url . "aprobado.php",
   "failure" => $redirige_url . "rechazado.php",
@@ -67,7 +67,7 @@ $preference->back_urls = array(
 $preference->auto_return = "approved";
 
 //referencia externa
-$preference -> external_reference = "jpr230697@gmail.com";
+$preference -> external_reference = "difredespelletti@gmail.com";
 
 //REFERIDO AL ITEM-----------------------------------------------------
 $item = new MercadoPago\Item();
