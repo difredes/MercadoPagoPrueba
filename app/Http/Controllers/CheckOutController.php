@@ -44,7 +44,7 @@ class CheckOutController extends Controller
           $title=addslashes($request->title);
           $item->title = $title;
           $url=addslashes($request->img);
-          $item->picture_url="https://seperdom-mp-ecommerce-php.herokuapp.com/assets/".$url;
+          $item->picture_url="https://difredes-mp-ecommerce-php.herokuapp.com/assets/".$url;
           $item->description="Dispositivo móvil de Tienda e-commerce";
           $item->quantity = 1;
           //$item->currency_id = "UYU";
@@ -78,9 +78,9 @@ class CheckOutController extends Controller
           $preference->payer = $payer;
           $preference->back_urls = array(
           	//"success" => "http://localhost:8000/backurl/success",
-           "success" => "https://seperdom-mp-ecommerce-php.herokuapp.com/backurl/success",
-            "failure" => "https://seperdom-mp-ecommerce-php.herokuapp.com/backurl/failure",
-            "pending" => "https://seperdom-mp-ecommerce-php.herokuapp.com/backurl/pending"
+           "success" => "https://difredes-mp-ecommerce-php.herokuapp.com/backurl/success",
+            "failure" => "https://difredes-mp-ecommerce-php.herokuapp.com/backurl/failure",
+            "pending" => "https://difredes-mp-ecommerce-php.herokuapp.com/backurl/pending"
         );
         $preference->auto_return = "approved";
         $preference->payment_methods = array(
@@ -97,9 +97,9 @@ class CheckOutController extends Controller
         );
 
           # Save and posting preference
-        $preference->notification_url= "https://seperdom-mp-ecommerce-php.herokuapp.com/notification";
+        $preference->notification_url= "https://difredes-mp-ecommerce-php.herokuapp.com/notification";
         //$preference->notification_url= "http://localhost:8000/notification";
-        $preference->external_reference="seperdom@gmail.com";
+        $preference->external_reference="difredespelletti@gmail.com";
         $preference->save();
         // get customer details by session customer ID
         //$mId=$_SESSION['sessCustomerID'];
